@@ -14,6 +14,11 @@
 		B91CD93228244C8400230F99 /* Caravan_v2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91CD93128244C8400230F99 /* Caravan_v2Tests.swift */; };
 		B91CD93C28244C8400230F99 /* Caravan_v2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91CD93B28244C8400230F99 /* Caravan_v2UITests.swift */; };
 		B91CD93E28244C8400230F99 /* Caravan_v2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91CD93D28244C8400230F99 /* Caravan_v2UITestsLaunchTests.swift */; };
+		B91CD94D282A6E4700230F99 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91CD94C282A6E4700230F99 /* CustomTabBarView.swift */; };
+		B91CD94F282D794700230F99 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91CD94E282D794700230F99 /* HomeView.swift */; };
+		B91CD951282D798500230F99 /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91CD950282D798500230F99 /* BookView.swift */; };
+		B91CD953282D79A000230F99 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91CD952282D79A000230F99 /* ProfileView.swift */; };
+		B91CD955282D79AE00230F99 /* StopWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91CD954282D79AE00230F99 /* StopWatchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		B91CD93728244C8400230F99 /* Caravan_v2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Caravan_v2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B91CD93B28244C8400230F99 /* Caravan_v2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caravan_v2UITests.swift; sourceTree = "<group>"; };
 		B91CD93D28244C8400230F99 /* Caravan_v2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caravan_v2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B91CD94C282A6E4700230F99 /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
+		B91CD94E282D794700230F99 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B91CD950282D798500230F99 /* BookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookView.swift; sourceTree = "<group>"; };
+		B91CD952282D79A000230F99 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		B91CD954282D79AE00230F99 /* StopWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +104,7 @@
 		B91CD91F28244C8300230F99 /* Caravan_v2 */ = {
 			isa = PBXGroup;
 			children = (
+				B91CD94A282A6DEA00230F99 /* View */,
 				B91CD92028244C8300230F99 /* Caravan_v2App.swift */,
 				B91CD92228244C8300230F99 /* ContentView.swift */,
 				B91CD92428244C8400230F99 /* Assets.xcassets */,
@@ -125,6 +136,26 @@
 				B91CD93D28244C8400230F99 /* Caravan_v2UITestsLaunchTests.swift */,
 			);
 			path = Caravan_v2UITests;
+			sourceTree = "<group>";
+		};
+		B91CD94A282A6DEA00230F99 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B91CD94C282A6E4700230F99 /* CustomTabBarView.swift */,
+				B91CD94B282A6DF800230F99 /* TabView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B91CD94B282A6DF800230F99 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				B91CD94E282D794700230F99 /* HomeView.swift */,
+				B91CD950282D798500230F99 /* BookView.swift */,
+				B91CD952282D79A000230F99 /* ProfileView.swift */,
+				B91CD954282D79AE00230F99 /* StopWatchView.swift */,
+			);
+			path = TabView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +288,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B91CD94D282A6E4700230F99 /* CustomTabBarView.swift in Sources */,
+				B91CD94F282D794700230F99 /* HomeView.swift in Sources */,
 				B91CD92328244C8300230F99 /* ContentView.swift in Sources */,
+				B91CD955282D79AE00230F99 /* StopWatchView.swift in Sources */,
 				B91CD92128244C8300230F99 /* Caravan_v2App.swift in Sources */,
+				B91CD953282D79A000230F99 /* ProfileView.swift in Sources */,
+				B91CD951282D798500230F99 /* BookView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
