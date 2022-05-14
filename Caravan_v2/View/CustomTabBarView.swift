@@ -31,16 +31,22 @@ struct CustomTabBarView: View {
                 .tag("Profile")
         }
         .overlay(
-            HStack {
-                TabBarButton(title: "Home", image: "house")
+            ZStack {
+                Rectangle()
+                    .fill(.white)
+                    .frame(height: 60)
                 
-                TabBarButton(title: "StopWatch", image: "house")
-                
-                TabBarButton(title: "Book", image: "books.vertical")
-                
-                TabBarButton(title: "Profile", image: "person")
+                HStack {
+                    TabBarButton(title: "Home", image: "house")
+                    
+                    TabBarButton(title: "StopWatch", image: "stopwatch")
+                    
+                    TabBarButton(title: "Book", image: "books.vertical")
+                    
+                    TabBarButton(title: "Profile", image: "person")
+                }
+                    .environmentObject(tabData)
             }
-                .environmentObject(tabData)
             , alignment: .bottom
         )
     }
@@ -63,12 +69,24 @@ struct TabBarButton: View {
         Button(action: {
             tabData.currentTab = title
         }, label: {
-            VStack {
-                Image(systemName: image)
-                Text(title)
+            ZStack {
+                Circle()
+                    .frame(width: 18, height: 18)
+                    .foregroundColor(tabData.currentTab == title ? .orange : .white)
+                    .padding(.bottom, 10)
+                
+                VStack(spacing: 0) {
+                    Image(systemName: image)
+                        .font(.system(size: 24, weight: .semibold))
+                        .frame(height: 29)
+                    
+                    Text(title)
+                        .font(.footnote)
+                        .fontWeight(.semibold)
+                }
+                .foregroundColor(tabData.currentTab == title ? .black : .gray)
+                .frame(maxWidth: .infinity)
             }
-            .foregroundColor(tabData.currentTab == title ? .blue : .gray)
-            .frame(maxWidth: .infinity)
         })
     }
 }

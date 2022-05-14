@@ -20,6 +20,7 @@
 		B91CD953282D79A000230F99 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91CD952282D79A000230F99 /* ProfileView.swift */; };
 		B91CD955282D79AE00230F99 /* StopWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91CD954282D79AE00230F99 /* StopWatchView.swift */; };
 		B91CD958282D7A6E00230F99 /* TabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91CD957282D7A6E00230F99 /* TabViewModel.swift */; };
+		B91CD95B282E19B200230F99 /* FontStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91CD95A282E19B200230F99 /* FontStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		B91CD952282D79A000230F99 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		B91CD954282D79AE00230F99 /* StopWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchView.swift; sourceTree = "<group>"; };
 		B91CD957282D7A6E00230F99 /* TabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewModel.swift; sourceTree = "<group>"; };
+		B91CD95A282E19B200230F99 /* FontStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		B91CD91F28244C8300230F99 /* Caravan_v2 */ = {
 			isa = PBXGroup;
 			children = (
+				B91CD959282E199C00230F99 /* Style */,
 				B91CD956282D7A5500230F99 /* Model */,
 				B91CD94A282A6DEA00230F99 /* View */,
 				B91CD92028244C8300230F99 /* Caravan_v2App.swift */,
@@ -167,6 +170,14 @@
 				B91CD957282D7A6E00230F99 /* TabViewModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B91CD959282E199C00230F99 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				B91CD95A282E19B200230F99 /* FontStyle.swift */,
+			);
+			path = Style;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,6 +312,7 @@
 			files = (
 				B91CD958282D7A6E00230F99 /* TabViewModel.swift in Sources */,
 				B91CD94D282A6E4700230F99 /* CustomTabBarView.swift in Sources */,
+				B91CD95B282E19B200230F99 /* FontStyle.swift in Sources */,
 				B91CD94F282D794700230F99 /* HomeView.swift in Sources */,
 				B91CD92328244C8300230F99 /* ContentView.swift in Sources */,
 				B91CD955282D79AE00230F99 /* StopWatchView.swift in Sources */,
