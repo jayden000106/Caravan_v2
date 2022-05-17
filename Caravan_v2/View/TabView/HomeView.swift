@@ -9,7 +9,25 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text("Home View")
+        VStack(alignment: .leading, spacing: 0) {
+            HStack {
+                Text("Home")
+                    .font(.title)
+                    .fontWeight(.bold)
+                
+                Spacer()
+            }
+            
+            VStack(alignment: .leading, spacing: 0) {
+                Text("안녕하세요. " + "님")
+                Text("오늘 하루\n책을 잠깐 들어보세요!")
+            }
+            .font(.title)
+            .padding(.top, 40)
+            
+            Spacer()
+        }
+        .padding(20)
     }
 }
 
